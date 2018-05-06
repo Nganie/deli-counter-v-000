@@ -1,11 +1,11 @@
 # Write your code here.
 def line(katz_deli)
   if katz_deli.count != 0
-    msg = "The line is currently:"
-    katz_deli.each_with_index do |name,index|
-      msg << "#{index.to_i+1}. #{name}"
+    greeting = "The line is currently:"
+    katz_deli.each_with_index do |name, index|
+      greeting << "#{index.to_i+1}. #{name}"
     end
-    puts msg
+    puts greeting
   else
   puts "The line is currently empty."
   end

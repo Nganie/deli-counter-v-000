@@ -1,5 +1,5 @@
 # Write your code here.
-deli = []
+katz_deli = []
 
 def line(people)
   count == 0

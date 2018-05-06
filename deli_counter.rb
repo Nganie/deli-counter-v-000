@@ -4,7 +4,7 @@ def line(katz_deli)
     greeting = "The line is currently:"
     katz_deli.each_with_index do |name, index|
       greeting << "#{index.to_i+1}. #{name}"
-    end
+    return greeting
   else
   puts "The line is currently empty."
   end

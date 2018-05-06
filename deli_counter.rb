@@ -1,6 +1,6 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli.count == 0
+  if line.count == 0
     return "The line is currently empty."
   elsif array.length == 2
     return array.join(" and ")

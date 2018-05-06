@@ -1,13 +1,12 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli.count != 0
+  if katz_deli.empty?
+    puts "The line is currently empty."
+  else
     greeting = "The line is currently:"
     katz_deli.each_with_index do |name, index|
       greeting << "#{index.to_i+1}. #{name}"
-    return greeting
-  end
-  else
-  puts "The line is currently empty."
+    puts greeting
   end
 end
 

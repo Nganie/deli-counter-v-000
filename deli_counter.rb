@@ -9,5 +9,6 @@ def line(katz_deli)
       line_number = index + 1
       count << "#{line_number}. #{name}"
   end
-puts count
+  puts count
+  end
 end

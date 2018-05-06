@@ -1,9 +1,10 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli.count != 0
+  if katz_deli.count >= 0
     katz_deli.each_with_index do |name, index|
       "The line is currently: #{index.to_i+1}. #{name}"
   else
+    if katz_deli.count == 0
   puts "The line is currently empty."
   end
 end

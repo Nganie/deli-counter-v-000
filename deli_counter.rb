@@ -1,9 +1,8 @@
 # Write your code here.
 def line(katz_deli)
   if katz_deli.count != 0
-    greeting = "The line is currently:"
     katz_deli.each_with_index do |name, index|
-      greeting << "#{index.to_i+1}. #{name}"
+      "The line is currently: #{index.to_i+1}. #{name}"
     end
     puts greeting
   else

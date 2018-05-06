@@ -4,8 +4,8 @@ def line(katz_deli)
     greeting = "The line is currently empty."
   else
     greeting = "The line is currently:"
-    katz_deli.each_with_index do | name, index |
-      greeting << "#{index+1}. #{name}"
+    katz_deli.each_with_index do | name, i |
+      greeting << "#{i+1}. #{name}"
   end
 end
 puts greeting

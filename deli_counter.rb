@@ -5,7 +5,7 @@ def line(katz_deli)
   else
     greeting = "The line is currently:"
     katz_deli.each_with_index do | name, ind |
-      greeting << "#{ind + 1}. #{name}"
+      greeting << "#{index}. #{name}"
   end
 end
 puts greeting

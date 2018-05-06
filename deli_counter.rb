@@ -5,7 +5,7 @@ def line(katz_deli)
   else
     greeting = "The line is currently:"
     katz_deli.each_with_index do | name, ind |
-      greeting << "#{index}. #{name}"
+      greeting << "#{index + 1}. #{name}"
   end
 end
 puts greeting
@@ -18,7 +18,7 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-  if katz_deli.count == 0
+  if katz_deli.empty?
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli[0]}."

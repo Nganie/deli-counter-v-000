@@ -3,8 +3,6 @@ def line(katz_deli)
   if katz_deli.count != 0
     katz_deli.each_with_index do |name, index|
       "The line is currently: #{index.to_i+1}. #{name}"
-    end
-    puts greeting
   else
   puts "The line is currently empty."
   end

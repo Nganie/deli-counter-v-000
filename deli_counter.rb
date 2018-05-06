@@ -1,14 +1,16 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli.count == 0
-    puts "The line is currently empty."
+  if katz_deli.empty?
+    greeting = "The line is currently empty."
   else
     greeting = "The line is currently:"
-    katz_deli.each_with_index do |name, index|
-      greeting << "#{index.to_i+1}. #{name}"
-    puts greeting
+    katz_deli.each_with_index do | name, index |
+      greeting << "#{index.to_i + 1}. #{name}"
   end
 end
+puts greeting
+end
+
 
 def take_a_number(katz_deli, name)
   katz_deli.push(name)
